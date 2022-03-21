@@ -1,0 +1,29 @@
+.status {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 30px;
+    background-color: #d3d3d3;
+  }
+
+  &--online {
+    &::before {
+      background-color: #00c980;
+    }
+  }
+}
+.ant-btn {
+  width: 100%;
+}
+.chat__dialog-header-action-content p{
+  margin-bottom: 5px;
+}

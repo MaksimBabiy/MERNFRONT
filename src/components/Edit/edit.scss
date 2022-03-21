@@ -1,0 +1,27 @@
+.edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    button {
+        width: 80px;
+    }
+    .edit__btn {
+        display: flex;
+        justify-content: start;
+    }
+   h4 {
+    font-size: 14px;
+    margin-top: 0;
+    text-align: left;
+    font-weight: 700;
+   }
+    input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    div {
+        margin-top: 10px;
+    }
+}
