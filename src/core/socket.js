@@ -1,5 +1,5 @@
 import io from 'socket.io-client'
 
-const socket = io(window.location.origin)
+const socket = io("https://mernchatbackend.herokuapp.com")
 
 export default socket
