@@ -4,9 +4,6 @@ import classnames from 'classnames'
 import { Time,Readed } from 'components'
 import { Avatar } from 'containers'
 import { Popover, Button, Icon } from 'antd';
-import waveSvg from 'assets/image/wave.svg';
-import playSvg from 'assets/image/play.svg';
-import pauseSvg from 'assets/image/pause.svg'
 import { convertCurrentTime, isAudio} from 'utils/helpers'
 import reactStringReplace from 'react-string-replace'
 import { Emoji } from 'emoji-mart';
@@ -93,14 +90,14 @@ const Message = ({
                 <div className="message__audio-btn">
                   <button onClick={togglePlay}>
                     {isPlaying ? (
-                      <img src={pauseSvg} alt="Pause svg" />
+                      <img src="https://res.cloudinary.com/df79xnsj1/image/upload/v1647949806/pause_r8lgop.svg" alt="Pause svg" />
                     ) : (
-                      <img src={playSvg} alt="Play svg" />
+                      <img src="https://res.cloudinary.com/df79xnsj1/image/upload/v1647949809/play_xotsir.svg" alt="Play svg" />
                     )}
                   </button>
                 </div>
                 <div className="message__audio-wave">
-                  <img src={waveSvg} alt="Wave svg" />
+                  <img src="https://res.cloudinary.com/df79xnsj1/image/upload/v1647949811/wave_fv1cgb.svg" alt="Wave svg" />
                 </div>
                 <span className="message__audio-duration">{convertCurrentTime(currentTime)}</span>
               </div>

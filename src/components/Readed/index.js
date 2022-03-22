@@ -1,6 +1,5 @@
 import React from 'react';
-import checkedSvg from '../../assets/image/1231.svg'
-import noChecked from '../../assets/image/noChecked.svg'
+
 
 const Readed = ({isMe,isReaded}) => {
 
@@ -8,12 +7,12 @@ const Readed = ({isMe,isReaded}) => {
         isMe && (isReaded ? (
             <img 
             alt={`123`}
-            src={checkedSvg} 
+            src="https://res.cloudinary.com/df79xnsj1/image/upload/v1647949588/1231_t9ubhx.svg"
             className="message__icon-readed"
             />
         ) : 
         <img 
-            src={noChecked} 
+            src="https://res.cloudinary.com/df79xnsj1/image/upload/v1647949708/noChecked_t38rx3.svg" 
             alt={`123`}
             className=" message__icon-readed message__icon-readed--no"
             />
